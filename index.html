@@ -1,82 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="#">
+<title>Lakopue</title>
+<!-- CSS -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
 
-body {
-  margin: 0;
-  background-color: #000;
-}
-
-#myVideo {
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-}
-
-
-.content {
-  position: fixed;
-  bottom: 0;
-  
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  right: 0;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-
-
-
-</style>
+	<link href="favicon.ico" rel="icon" type="image/icon type" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 
 
 </head>
-<body>
 
 
-<video autoplay muted id="myVideo">
-  <source src="video/video.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<style>
+	::-webkit-scrollbar{
+			width:10px;
+	}
+	
+	::-webkit-scrollbar-track{
+		border-radius:5px;
+		box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+	}
+	
+	::-webkit-scrollbar-thumb{
+		 border-radius:50px 0 0 50px;
+		 outline: 0;
+		 background:#009578;
+		 box-shadow: 0 4px 10 px rgba(0,0,0,0.5);
+	}
+	
+	::-webkit-scrollbar-thumb:hover{
+		 background-color:#bcd4;
+	}
+	</style>
+<body class="frontpage">
+
+<!--<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+--->
+
+
+<div class="menu-outer">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+	</div>
+	
 
 
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+    <nav>
+        <ul>
+			<li><a href="pages/design.html">Lakopue Design</a></li>
+			<!--<li class="dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html">Lakopue Design</a>
+			<div class="dropdown-menu"><a class="dropdown-item" href="">Ready-to-wear</a>
+			<a class="dropdown-item" href="">Haute couture</a>
+			<a class="dropdown-item" href="">Collections</a>
+			</div>
+			</li>-->
+			<li><a href="pages/styling.html">Styling</a></li>
+           <li><a href="store/store.html">Store</a></li>
+		   <li><a target="_blank" href="pages/school.html">School</a></li>
+		   <li><a target="_blank" href="event/event.html">Event</a></li>
+       </ul>
+   </nav>
+</div>
+<a class="menu-close" onClick="return true">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</a>
 
-document.getElementById('myVideo').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
-        window.location.replace('home/index.html');
-    }
+<div class="fixedcallicon">
+	<i class="fa fa-calendar"></i><a href="bookappointment.html" style="color:#fff;"> <span class="hide">Book Appointment</span></a>
+</div>
 
-</script>
+<div class="fixedcallicon1">
+	<i class="fa fa-shopping-cart"></i><span class="hide">Store</span>
+</div>
+
+<div class="container">
+	<section class="background">
+	<div class="content-wrapper">
+		<div class="intro">
+			<!--<h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">FEEL THE LUXURY</span>-->
+			<span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s"><img src="img/lakopue_logo.png" width=720px height=195px></span><br/>
+			</h1>
+		</div>
+	
+	</div>
+	</section>
+
+
+	<section class="background">
+		<div class="content-wrapper">
+			<ul class="subcategory">
+				<li><a href="pages/bridal.html">Store</a></li>
+				<li><a href="pages/bridal.html">Collection</a></li>
+				<li><a href="pages/bridal.html">Clients</a></li>
+			</ul>
+			<div class="about">
+				<div class="aboutbadge">
+					<a href="pages/bridal.html" style="color:white;"><span class="border">Bridal</span></a><br/>
+					</span>
+				</div>
+				<div class="aboutbadge black">
+					<span>The perfect wedding happens with a LAKOPUE bride. Let's bring your bridal fantasies to life, shall we? </span>
+				</div>
+			</div>
+		</div>
+		</section>
+			
+	<section class="background">
+		<div class="content-wrapper">
+			<ul class="subcategory">
+				<li><a href="pages/styling.html">Music videos</a></li>
+				<li><a href="pages/styling.html">Magazine</a></li>
+				<li><a href="pages/styling.html">commercials</a></li>
+				<li><a href="pages/styling.html">Personal/Corporate styling</a></li>
+				<li><a href="pages/styling.html">Editorial</a></li>
+			</ul>
+			<div class="about">
+				<div class="aboutbadge">
+					<span class="border">Styling</span><br/>
+					</span>
+				</div>
+				<div class="aboutbadge black">
+					<span>Are you seeking to be styled for an event, a photo or video shoot, a magazine cover or anything else? Look no further than LAKOPUÉ! We style you based on your brand image and we bring that extra touch of luxuriousness on board. </span>
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+
+	<section class="background">
+	<div class="content-wrapper">
+		<div class="voucher">
+			<div class="voucher-whitetransparent">
+				<h2><i class="fa fa-newspaper-o"></i><br/><a href="pages/school.html" style="color:white;"> SCHOOLS<br/>ENROLL<br/></h2></a>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section class="background">
+	<div class="content-wrapper">
+		<div class="pricingbadge">
+			<ul class="pricing_menu__list">
+				<a class="fullpricelist" href="store/store.html"><i class="fa fa-store"></i>VISIT OUR STORE</a>
+			</ul>
+		</div>
+	</div>
+	</section>
+	<section class="background">
+	<div class="content-wrapper" >
+		
+			<div class="contactform-bubble">
+				<form autocomplete="off" class="contactform" method="post" action="contact.php" id="contactform">
+					<h4>Contact Us</h4>
+					<input name="name" type="text" placeholder="Name">
+					<input name="email" type="text" placeholder="E-mail">
+					<textarea name="comment" placeholder="Message" rows="4"></textarea>
+					<input value="SEND" type="submit" id="submit" class="btnsend">
+					<div class="done">
+						<div class="alert-box success">
+							<i>Message sent! We'll answer shortly.</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+</div>
+
+
+	</section>
+</div>
+
+
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+<script src="js/testimonials.js"></script>
 
 </body>
 </html>
